@@ -16,11 +16,11 @@
         .section { padding: 60px 20px; }
         .gray { background: #f0f0f0; }
         .white { background: white; }
-        .darkgray { background: #3a3a3a; color: white; }
+        .darkgray { background: #2E3747; color: white; }
         .two-col { display: flex; gap: 20px; max-width: 900px; margin: auto; }
         .col { flex: 1; text-align: center; }
         img { max-width: 100%; height: auto; }
-        .large-img { max-width: 90%; }
+        .large-img { width: 100%; max-width: 700px; height: 420px; object-fit: cover; border-radius: 8px; }
         .button {
             display: inline-block; padding: 15px 28px;
             background: black; color: white; text-decoration: none;
@@ -33,6 +33,7 @@
         input, textarea { padding: 12px; font-size: 18px; width: 100%; }
         a.name-link { font-size: 24px; text-decoration: none; color: black; font-weight: bold; }
         .darkgray a.name-link { color: white; }
+        form button { margin-bottom: 40px; }
     </style>
 </head>
 <body>
@@ -68,7 +69,8 @@
 <div class="section darkgray">
     <h2>See how it works</h2>
     <div class="col">
-        <p>Use your fingertip to sketch your imagination in air. DynaDio senses your motion and traces its trajectory as a glowing trail inside a glass box — in real time.</p>
+        <p>Use your fingertip to sketch your imagination in air.</p> 
+        <p>DynaDio senses your motion and traces its trajectory as a glowing trail inside a glass box — in real time.</p>
         <img src="img/homeimg4.png" class="large-img">
         <div class="button-center">
             <a href="product.html" class="button">See More</a>
@@ -93,7 +95,7 @@
 </div>
 
 <section style="background:#f0f0f0; text-align:center;">
-  <h2>Register interest</h2>
+  <h2 class="left-title">Register interest</h2>
 
   <form name="contact" method="POST" data-netlify="true">
     <input type="text" name="name" placeholder="Name" required />
